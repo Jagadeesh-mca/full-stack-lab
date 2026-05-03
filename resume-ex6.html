@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jagadeesh - Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body { background:#f5f7fa; font-family:sans-serif; }
+    .sidebar { position:fixed; top:0; left:0; width:250px; height:100vh; background:#fff; border-right:1px solid #eee; padding:30px 20px; }
+    .main { margin-left:250px; padding:30px; }
+    .proj-slide { background:linear-gradient(135deg,#4a90d9,#2c5f9e); border-radius:10px; padding:40px; color:#fff; min-height:160px; }
+    .r-card { background:#fff; border:1px solid #eee; border-radius:10px; padding:20px; margin-bottom:16px; }
+  </style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h5 class="fw-bold mb-0">Jagadeesh</h5>
+  <p class="text-primary small mb-3">MCA Student · Big Data</p>
+
+  <!-- Dropdown -->
+  <div class="dropdown mb-3">
+    <button class="btn btn-primary btn-sm w-100 dropdown-toggle" data-bs-toggle="dropdown">Contact Options</button>
+    <ul class="dropdown-menu w-100">
+      <li><a class="dropdown-item" href="mailto:jagadeesh0184@gmail.com">✉️ Email</a></li>
+      <li><a class="dropdown-item" href="tel:9345733529">📞 Call</a></li>
+    </ul>
+  </div>
+
+  <p class="mb-0 text-muted small">Location</p><p class="small">Chennai, India</p>
+  <p class="mb-0 text-muted small">Phone</p><p class="small">9345733529</p>
+  <p class="mb-0 text-muted small">Email</p><p class="small">jagadeesh0184@gmail.com</p>
+
+  <hr/>
+
+  <!-- Collapse -->
+  <button class="btn btn-light btn-sm w-100 text-start mb-2" data-bs-toggle="collapse" data-bs-target="#skills">🛠 Skills ▾</button>
+  <div class="collapse show" id="skills">
+    <span class="badge bg-secondary me-1">Python</span>
+    <span class="badge bg-secondary me-1">SQL</span>
+    <span class="badge bg-secondary me-1">NumPy</span>
+    <span class="badge bg-secondary me-1">Pandas</span>
+    <span class="badge bg-secondary me-1">Cloud</span>
+  </div>
+
+  <hr/>
+  <!-- Modal Trigger -->
+  <button class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#infoModal">View Full Info</button>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- Carousel -->
+  <h6 class="fw-bold mb-2">Academic Projects</h6>
+  <div id="carousel" class="carousel slide mb-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="proj-slide">
+          <span class="badge bg-light text-primary mb-2">Project 1</span>
+          <h6 class="fw-bold">Shoe Website</h6>
+          <p class="small mb-0">Responsive e-commerce front-end built using HTML, CSS and Bootstrap.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="proj-slide">
+          <span class="badge bg-light text-primary mb-2">Project 2</span>
+          <h6 class="fw-bold">Banking Management System</h6>
+          <p class="small mb-0">Python-based console app for deposits, withdrawals and account management.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" style="filter:invert(1) brightness(.4)"></span></button>
+    <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next"><span class="carousel-control-next-icon" style="filter:invert(1) brightness(.4)"></span></button>
+  </div>
+
+  <!-- Education + Workshop -->
+  <div class="row g-3 mb-3">
+    <div class="col-md-7">
+      <div class="r-card">
+        <h6 class="fw-bold">Education – PG</h6>
+        <p class="text-muted small mb-1">Hindustan University, Chennai</p>
+        <p class="fw-semibold mb-1">MCA – Big Data &nbsp; <span class="badge bg-success">CGPA 9.7</span></p>
+        <p class="text-muted small mb-0">2025 – 2027</p>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="r-card">
+        <h6 class="fw-bold">Workshop</h6>
+        <p class="fw-semibold mb-1">Intro to Computer Networks</p>
+        <p class="text-muted small mb-0">Network Geeks</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="r-card">
+    <h6 class="fw-bold mb-3">Experience</h6>
+    <p class="fw-semibold mb-0">Prompt Engineering Intern · DataDrone</p>
+    <p class="text-primary small mb-3">Ongoing – Present</p>
+    <p class="fw-semibold mb-0">Data Scientist Intern · Network Geeks</p>
+    <p class="text-muted small mb-0">July 2025</p>
+  </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"><h6 class="modal-title fw-bold">Contact Info</h6><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <p><strong>Name:</strong> Jagadeesh</p>
+        <p><strong>Email:</strong> jagadeesh0184@gmail.com</p>
+        <p><strong>Phone:</strong> 9345733529</p>
+        <p class="mb-0"><strong>Location:</strong> Chennai, India</p>
+      </div>
+      <div class="modal-footer"><button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
